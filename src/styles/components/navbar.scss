@@ -1,0 +1,34 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.router-nav-link {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    color: $gray-500;
+    margin-inline: calc( $spacer * .5);
+    &:visited {
+        text-decoration: none;
+        color: $gray-500;
+    }
+    &.active, &:hover {
+        color: $white;
+    }
+}
+
+.dropdown-router-nav-link {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    color: $gray-200;
+    padding-inline-start: calc( $spacer);
+    &:visited, &:hover {
+        text-decoration: none;
+        color: $gray-200;
+    }
+    &:hover {
+        background-color: $gray-700;
+    }
+    &.active {
+        color: $white;
+    }
+}

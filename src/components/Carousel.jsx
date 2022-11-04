@@ -20,12 +20,13 @@ const Carousel = () => {
         },
     ])
   return (
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             {
                 cats.map( (_, index) => {
                     return(
-                        <button 
+                        <button
+                            key = { `${index},1` }
                             type="button" 
                             data-bs-target="#carouselExampleCaptions" 
                             data-bs-slide-to={ index.toString() } 
@@ -41,7 +42,7 @@ const Carousel = () => {
             {
                 cats.map( (cat, index) => {
                     return(
-                        <div class={`carousel-item ${index === 0 &&'active'}`}>
+                        <div class={`carousel-item ${index === 0 &&'active'}`} data-bs-interval="5000" key={ `${index},2` }>
                             <img src={ cat['image-url'] } class="d-block w-100" alt={ cat['cat-name']}/>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>{ cat['cat-name'] }</h5>

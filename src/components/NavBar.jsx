@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import '../styles/components/navbar.scss'
 
 const NavBar = () => {
   return (
@@ -13,22 +15,22 @@ const NavBar = () => {
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav position-relative">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Meet our cats</a>
-                    <li class="nav-item dropdown">
+                    <NavLink to={'/'} className="router-nav-link">Home</NavLink>
+                    <NavLink to={'meet-our-cats'} className="router-nav-link">Meet our cats</NavLink>
+                    <li class="nav-item dropdown mx-1">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Adoptions
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">How to adopt?</a></li>
-                            <li><a class="dropdown-item" href="#">Adoption requeriments</a></li>
+                            <NavLink to={'adoptions/how-to-adopt'} className="dropdown-router-nav-link">How to adopt?</NavLink>
+                            <NavLink to={'adoptions/adoption-requeriments'} className="dropdown-router-nav-link">Adoption requeriments</NavLink>
                             <li><hr class="dropdown-divider"/></li>
-                            <li><a class="dropdown-item" href="#">Meet our cats</a></li>
+                            <NavLink to={'meet-our-cats'} className="dropdown-router-nav-link">Meet our cats</NavLink>
                         </ul>
                     </li>
-                    <a class="nav-link" href="#">Volunteering</a>
-                    <a class="nav-link" href="#">Donate</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <NavLink to={'volunteering'} className="router-nav-link">Volunteering</NavLink>
+                    <NavLink to={'donate'} className="router-nav-link">Donate</NavLink>
+                    <NavLink to={'contact'} className="router-nav-link">Contact</NavLink>
                 </div>
             </div>
         </div>

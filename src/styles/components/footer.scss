@@ -2,6 +2,7 @@
 
 .social-media-icon {
     color: $white;
+    transition: all .8s ease;
     &:hover {
         color: $cyan-300;
     }
