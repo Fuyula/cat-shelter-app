@@ -1,0 +1,8 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.social-media-icon {
+    color: $white;
+    &:hover {
+        color: $cyan-300;
+    }
+}

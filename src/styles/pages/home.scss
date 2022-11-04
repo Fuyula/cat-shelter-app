@@ -1,0 +1,68 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.home {
+    .display-1 {
+        margin: 50px;
+    }
+    .home-shelter-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            max-width: 80%;
+        }
+    }
+    .home-shelter-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+}
+@include media-breakpoint-up(lg) { 
+    .home-shelter-about {
+        flex-direction: row;
+        max-width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .home-shelter-about-image-description {
+            width: 40%;
+        }
+        .home-shelter-about-image {
+            width: 50%;
+            img {
+                object-fit: cover;
+                border-radius: 50%;
+                width: 30vw;
+                height: 30vw;
+            }
+        }
+    }
+ }
+@include media-breakpoint-down(lg) { 
+    .home-shelter-about {
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .home-shelter-about-image-description {
+            width: 80%;
+        }
+        .home-shelter-about-image {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                object-fit: cover;
+                border-radius: 50%;
+                width: 50vw;
+                height: 50vw;
+            }
+            
+        }
+    }
+ }
