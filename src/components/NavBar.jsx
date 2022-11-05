@@ -17,15 +17,15 @@ const NavBar = () => {
                 <div class="navbar-nav position-relative">
                     <NavLink to={'/'} className="router-nav-link">Home</NavLink>
                     <NavLink to={'meet-our-cats'} className="router-nav-link">Meet our cats</NavLink>
-                    <li class="nav-item dropdown mx-1">
+                    <li class="nav-item dropdown mx-1 d-flex flex-column align-self-center text-center">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Adoptions
+                            Adopt a cat
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <NavLink to={'adoptions/how-to-adopt'} className="dropdown-router-nav-link">How to adopt?</NavLink>
-                            <NavLink to={'adoptions/adoption-requeriments'} className="dropdown-router-nav-link">Adoption requeriments</NavLink>
+                            <NavLink to={'adopt-a-cat/how-to-adopt'} className="dropdown-item dropdown-router-nav-link">How to adopt?</NavLink>
+                            <NavLink to={'adopt-a-cat/adoption-requeriments'} className="dropdown-item dropdown-router-nav-link">Adoption requeriments</NavLink>
                             <li><hr class="dropdown-divider"/></li>
-                            <NavLink to={'meet-our-cats'} className="dropdown-router-nav-link">Meet our cats</NavLink>
+                            <NavLink to={'meet-our-cats'} className="dropdown-item dropdown-router-nav-link">Meet our cats</NavLink>
                         </ul>
                     </li>
                     <NavLink to={'volunteering'} className="router-nav-link">Volunteering</NavLink>

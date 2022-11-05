@@ -25,10 +25,14 @@
         text-decoration: none;
         color: $gray-200;
     }
-    &:hover {
+    &:hover, &:focus {
         background-color: $gray-700;
     }
     &.active {
         color: $white;
     }
+    
+}
+.dropdown-item.active.active, .dropdown-item.active:active {
+    background-color: $gray-600;
 }
