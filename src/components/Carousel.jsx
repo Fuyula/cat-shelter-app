@@ -20,13 +20,13 @@ const Carousel = () => {
         },
     ])
   return (
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
+    <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div className="carousel-indicators">
             {
                 cats.map( (_, index) => {
                     return(
                         <button
-                            key = { `${index},1` }
+                            key = { `carousel ${index},1` }
                             type="button" 
                             data-bs-target="#carouselExampleCaptions" 
                             data-bs-slide-to={ index.toString() } 
@@ -38,13 +38,13 @@ const Carousel = () => {
                 })
             }
         </div>
-        <div class="carousel-inner">
+        <div className="carousel-inner">
             {
                 cats.map( (cat, index) => {
                     return(
-                        <div class={`carousel-item ${index === 0 &&'active'}`} data-bs-interval="5000" key={ `${index},2` }>
-                            <img src={ cat['image-url'] } class="d-block w-100" alt={ cat['cat-name']}/>
-                            <div class="carousel-caption d-none d-md-block">
+                        <div className={`carousel-item ${index === 0 &&'active'}`} data-bs-interval="5000" key={ `carousel ${index},2` }>
+                            <img src={ cat['image-url'] } className="d-block w-100" alt={ cat['cat-name']}/>
+                            <div className="carousel-caption d-none d-md-block">
                                 <h5>{ cat['cat-name'] }</h5>
                                 <p>{ cat['cat-age'] }</p>
                             </div>
@@ -53,13 +53,13 @@ const Carousel = () => {
                 })
             }
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
         </button>
     </div>
   )

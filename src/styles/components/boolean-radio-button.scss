@@ -1,0 +1,10 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+.boolean-radio-button-container {
+    .form-check-input:checked[type=radio] {
+        background-color: $black;
+        border-color: $black;
+        box-shadow: 0 0 0 .25rem rgb(0 0 0 / 25%);
+    }
+}
