@@ -1,0 +1,11 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+a#mail-to-link {
+    text-decoration: none;
+    color: $gray-500;
+    transition: all .7s ease;
+    &:hover {
+        color: $gray-600;
+    }
+}
