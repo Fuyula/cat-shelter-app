@@ -1,6 +1,6 @@
 import React from 'react'
+import SingleImgSectionContainer from '../components/SingleImgSectionContainer';
 import { lorem } from '../dummyData';
-import '../styles/pages/adoption-requeriments.scss';
 
 const AdoptionRequeriments = () => {
   return (
@@ -9,17 +9,10 @@ const AdoptionRequeriments = () => {
         <h1 className='display-1 my-5'>
           Adoption requeriments
         </h1>
-        <div className='container-fluid row d-flex flex-row align-items-centerc mt-3 mb-5'>
-          <div className='col d-flex flex-column align-items-center justify-content-center'>
-              <img
-                className='how-to-adopt-img p-2 mb-5'
-                src='https://images.unsplash.com/photo-1601758066503-27afdf1b9316?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80' 
-              />
-          </div>
-          <div className='col d-flex flex-column align-items-center justify-content-center'>
-              <p> { lorem.repeat(5) }</p>
-            </div>
-        </div>
+        <SingleImgSectionContainer
+          imgUrl='https://images.unsplash.com/photo-1601758066503-27afdf1b9316?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80'
+          content={ lorem.repeat(5) }
+        />
         <h2 className='display-4 my-5'>General requeriments</h2>
         <ul className="list-group">
           <li className="list-group-item">You must be 18 years of age or older.</li>
@@ -36,26 +29,19 @@ const AdoptionRequeriments = () => {
           <li className="list-group-item">Any restrictions on animal ownership where you live</li>
         </ul>
         <h2 className='display-4 my-5'>Adoption fee</h2>
-        <p>
+        <p className='px-2'>
           { lorem.repeat(5) }
         </p>
         <h2 className='display-4 my-5'>Home visit</h2>
-        <p>
+        <p className='px-2'>
           { lorem.repeat(5) }
         </p>
-        <div className='container-fluid row d-flex flex-row align-items-center justify-content-center mb-5'>
-          <div className='col d-flex flex-column align-items-center'>
-            <h2 className='display-4 my-5'>Family meet and greet</h2>
-            <p> { lorem.repeat(5) }</p>
-          </div>
-          <div className='col d-flex flex-column align-items-center justify-content-center'>
-            <img
-                className='how-to-adopt-img p-2'
-                src='https://images.unsplash.com/photo-1601758066681-04e3557afaaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' 
-              />
-          </div>
-        </div>
-        
+        <SingleImgSectionContainer
+          imgUrl='https://images.unsplash.com/photo-1601758066681-04e3557afaaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+          title='Family meet and greet'
+          content={ lorem.repeat(5) }
+          reverse
+        />        
       </div>
     </div>
   )

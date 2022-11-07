@@ -3,14 +3,14 @@
 
 @import "../../../node_modules/bootstrap/scss/mixins";
 
-.how-to-adopt-img {
+.single-img-section-img {
     height: 30vw;
     width: 30vw;
     object-fit: cover;
     border-radius: 50%;
 }
 @include media-breakpoint-down(lg) {
-    .how-to-adopt-img {
+    .single-img-section-img {
         height: 80vw;
         width: 80vw;
     }
