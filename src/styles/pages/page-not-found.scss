@@ -1,0 +1,28 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+#lottie-animation {
+    width: 40vw;
+}
+@include media-breakpoint-down(xxl) {
+    #lottie-animation {
+        width: 50vw;
+    }
+}
+@include media-breakpoint-down(lg) {
+    #lottie-animation {
+        width: 60vw;
+    }
+}
+@include media-breakpoint-down(md) {
+    #lottie-animation {
+        width: 70vw;
+    }
+}
+@include media-breakpoint-down(sm) {
+    #lottie-animation {
+        width: 80vw;
+    }
+}
