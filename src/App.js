@@ -13,6 +13,7 @@ import AdoptionRequeriments from './pages/AdoptionRequeriments';
 import Volunteering from './pages/Volunteering';
 import Donate from './pages/Donate';
 import Contact from './pages/Contact';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
@@ -20,15 +21,17 @@ function App() {
       <BrowserRouter>
       <NavBar />
         <Routes>
-          <Route path='/' element={<Home />}/>
+          <Route index path='/' element={<Home />}/>
           <Route path='/meet-our-cats' element={<MeetOurCats />}/>
-          <Route path='/adopt-a-cat'>
+          <Route path='adopt-a-cat'>
+          <Route index element={ <HowToAdopt />} />
             <Route path='how-to-adopt' element={ <HowToAdopt />} />
             <Route path='adoption-requeriments' element = { <AdoptionRequeriments /> } />
           </Route>
           <Route path='/volunteering' element={<Volunteering />}/>
           <Route path='/donate' element={<Donate />}/>
           <Route path='/contact' element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
