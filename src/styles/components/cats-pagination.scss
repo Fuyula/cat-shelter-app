@@ -1,0 +1,12 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+.page-link {
+    border: none;
+    background-color: $gray-200;
+    color: $black;
+    &:hover {
+        background-color: $gray-500;
+        color: $black;
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { TwoThumbInputRange } from 'react-two-thumb-input-range';
 import BooleanRadioButton from './BooleanRadioButton';
 import PropTypes from 'prop-types';
+import '../styles/components/filter-search-modal.scss'
 
 const FilterSearchModal = ( { filters, setFilterByAge, filterByAge } ) => {
     return (
@@ -66,7 +67,7 @@ const FilterSearchModal = ( { filters, setFilterByAge, filterByAge } ) => {
 
 FilterSearchModal.propTypes = {
     filters: PropTypes.array.isRequired,
-    onValueChange: PropTypes.func.isRequired,
+    setFilterByAge: PropTypes.func.isRequired,
     filterByAge: PropTypes.array.isRequired,
 }
 

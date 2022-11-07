@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/components/single-cat-card.scss'
 
 const SingleCatCard = ({ cat }) => {
   return (
-    <div className = "card mx-2 mt-5 d-flex flex-column">
+    <div className = "cat-card mx-2 mt-5 d-flex flex-column">
         <div className = "row g-0 d-flex flex-grow-1">
             <div className = "col-lg-5">
                 <img 
