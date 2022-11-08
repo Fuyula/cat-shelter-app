@@ -4,7 +4,7 @@ import '../styles/pages/donate.scss'
 
 const Donate = () => {
   return (
-    <div className='App container-fluid d-flex flex-column align-items-center' style={{ minHeight: '90vh' }} >
+    <main className='App container-fluid d-flex flex-column align-items-center' style={{ minHeight: '90vh' }} >
       <div className='mb-5 d-flex flex-row justify-content-center flex-wrap' style={{ width: '90%' }}>
         <h1 className='display-1 my-5'>
           Donate
@@ -31,7 +31,7 @@ const Donate = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

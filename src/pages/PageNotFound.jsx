@@ -13,16 +13,16 @@ const PageNotFound = () => {
         }
     };
   return (
-    <div className='container-fluid d-flex flex-column align-items-center justify-content-center'>
+    <main className='container-fluid d-flex flex-column align-items-center justify-content-center'>
         <div className='container-fluid d-flex flex-column align-items-center justify-content-center' style={{ minHeight: '80vh'}}>
             <h1 className='display-1 m-5'>PageNotFound </h1>
-            <div className='container-fluid d-flex flex-column align-items-center justify-content-center' id = "lottie-animation">
+            <figure className='container-fluid d-flex flex-column align-items-center justify-content-center' id = "lottie-animation">
                 <Lottie 
                     options={defaultOptions}
                 />
-            </div>
+            </figure>
         </div>
-    </div>
+    </main>
   )
 }
 

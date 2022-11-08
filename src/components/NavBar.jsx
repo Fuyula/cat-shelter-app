@@ -4,9 +4,9 @@ import '../styles/components/navbar.scss'
 
 const NavBar = () => {
   return (
-    <nav className = "navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
+    <header className = "navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
         <div className = "container-fluid">
-            <a className = "navbar-brand" href = "#">
+            <NavLink className = "navbar-brand" to="/">
                 <img 
                     src = { require('../assets/shelter-logo.png') } 
                     alt = "Logo" 
@@ -15,7 +15,7 @@ const NavBar = () => {
                     className = "d-inline-block align-text-top"
                 />
                 Cat Shelter
-            </a>
+            </NavLink>
             <button 
                 className = "navbar-toggler" 
                 type = "button" 
@@ -79,7 +79,7 @@ const NavBar = () => {
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
   )
 }
 

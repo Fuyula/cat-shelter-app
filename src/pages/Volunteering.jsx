@@ -5,7 +5,7 @@ import '../styles/pages/volunteering.scss'
 
 const Volunteering = () => {
   return (
-    <div className='App container-fluid d-flex flex-column align-items-center justify-content-center' >
+    <main className='App container-fluid d-flex flex-column align-items-center justify-content-center' >
       <div className='mb-5' style={{ width: '90%' }}>
         <h1 className='display-1 my-5'>
           We need volunteers
@@ -36,7 +36,7 @@ const Volunteering = () => {
           <a id='mail-to-link' href='mailto:cat-shelter@shelter.com'> cat-shelter@shelter.com</a>.
         </p>      
       </div>
-    </div>
+    </main>
   )
 }
 

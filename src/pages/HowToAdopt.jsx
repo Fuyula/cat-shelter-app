@@ -4,7 +4,7 @@ import { lorem } from '../dummyData'
 
 const HowToAdopt = () => {
   return (
-    <div className='App container-fluid d-flex flex-column align-items-center justify-content-center' >
+    <main className='App container-fluid d-flex flex-column align-items-center justify-content-center' >
       <div style={{ width: '90%' }}>
         <h1 className='display-1 my-5'>How to adopt?</h1>
         <SingleImgSectionContainer 
@@ -19,7 +19,7 @@ const HowToAdopt = () => {
           reverse
         />
       </div>
-    </div>
+    </main>
       
       
   )

@@ -42,13 +42,13 @@ const Carousel = () => {
             {
                 cats.map( (cat, index) => {
                     return(
-                        <div className={`carousel-item ${index === 0 &&'active'}`} data-bs-interval="5000" key={ `carousel ${index},2` }>
+                        <figure className={`carousel-item ${index === 0 &&'active'}`} data-bs-interval="5000" key={ `carousel ${index},2` }>
                             <img src={ cat['image-url'] } className="d-block w-100" alt={ cat['cat-name']}/>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{ cat['cat-name'] }</h5>
                                 <p>{ cat['cat-age'] }</p>
                             </div>
-                        </div>
+                        </figure>
                     )
                 })
             }

@@ -53,11 +53,11 @@ const MeetOurCats = () => {
   ]
   
   return (
-    <div className="App meet-our-cats">
+    <main className="App meet-our-cats">
       <h1 className='display-1'> Give a cat a home </h1>
       <p> { lorem.repeat(3) } </p>
       <div className='container-fluid d-flex flex-column'>
-        <nav className="filter-nav navbar">
+        <section className="filter-nav navbar">
           <div className="filter-nav-container container-fluid d-flex justify-content-between align-items-center px-5">
             <form className="d-flex m-3" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -69,13 +69,13 @@ const MeetOurCats = () => {
               Filter
             </button>
           </div>
-        </nav>
+        </section>
         <FilterSearchModal 
           filters = { filters } 
           setFilterByAge = { setFilterByAge } 
           filterByAge = { filterByAge } 
         />
-        <div className='cats-container container-fluid bg-white p-2 d-flex flex-row align-items-stretch justify-content-evenly flex-wrap'>
+        <section className='cats-container container-fluid bg-white p-2 d-flex flex-row align-items-stretch justify-content-evenly flex-wrap'>
           {  
             cats.map( ( cat, index ) => {
                 return(
@@ -84,10 +84,10 @@ const MeetOurCats = () => {
               }
             )
           }
-        </div>
+        </section>
         <CatsPagination />
       </div>
-    </div>
+    </main>
   )
 }
 
