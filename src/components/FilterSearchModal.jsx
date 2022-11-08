@@ -6,16 +6,16 @@ import '../styles/components/filter-search-modal.scss'
 
 const FilterSearchModal = ( { filters, setFilterByAge, filterByAge } ) => {
     return (
-        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <aside className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-md">
-                <div className="modal-content container-fluid">
-                    <div className="modal-header container-fluid">
+                <article className="modal-content container-fluid">
+                    <section className="modal-header container-fluid">
                         <h1 className="display-6 text-center" id="exampleModalLabel">
                             Filter
                         </h1>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div className="modal-body container-fluid">
+                    </section>
+                    <section className="modal-body container-fluid">
                         <form className="container-fluid d-flex flex-column justify-content-evenly mb-4">
                             <label className="form-label m-4 fw-semibold">
                                 Age (years)
@@ -35,33 +35,33 @@ const FilterSearchModal = ( { filters, setFilterByAge, filterByAge } ) => {
                             filters.map(( filter, index ) =>
                                 {
                                 return(
-                                    <div key = {`filter ${ index }`} >
-                                    <label className="form-label m-4 fw-semibold">
-                                        { filter.name }
-                                    </label>
-                                    <BooleanRadioButton 
-                                        option1 = { filter.option1 } 
-                                        option2 = { filter.option2 } 
-                                        value = { filter.value } 
-                                        setValue = { filter.setValue } 
-                                    />
-                                    </div>
+                                    <section key = {`filter ${ index }`} >
+                                        <label className="form-label m-4 fw-semibold">
+                                            { filter.name }
+                                        </label>
+                                        <BooleanRadioButton 
+                                            option1 = { filter.option1 } 
+                                            option2 = { filter.option2 } 
+                                            value = { filter.value } 
+                                            setValue = { filter.setValue } 
+                                        />
+                                    </section>
                                 )
                                 }
                             )
                         }
-                    </div>
-                    <div className="modal-footer">
+                    </section>
+                    <section className="modal-footer">
                         <button type="button" className="btn btn-outline-dark" data-bs-dismiss="modal">
                             Close
                         </button>
                         <button type="button" className="btn btn-dark">
                             Save changes
                         </button>
-                    </div>
-                </div>
+                    </section>
+                </article>
             </div>
-        </div>
+        </aside>
     )
 }
 

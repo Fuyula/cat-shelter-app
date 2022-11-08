@@ -4,18 +4,18 @@ import '../styles/components/single-cat-card.scss'
 
 const SingleCatCard = ({ cat }) => {
   return (
-    <div className = "cat-card mx-2 mt-5 d-flex flex-column">
+    <article className = "cat-card mx-2 mt-5 d-flex flex-column">
         <div className = "row g-0 d-flex flex-grow-1">
-            <div className = "col-lg-5">
+            <figure className = "col-lg-5" style={{ padding: 0, margin: 0}}>
                 <img 
                     src = { cat['image-url'] }
                     className = "img-fluid"
                     alt = "..."
                     style = {{ height: '100%', objectFit: 'cover'}}
                 />
-            </div>
-            <div className = "col-lg-7">
-                <div className = "card-body py-4 px-1">
+            </figure>
+            <section className = "col-lg-7">
+                <article className = "card-body py-4 px-1">
                     <h5 className = "card-title">
                         { cat['cat-name'] }
                     </h5>
@@ -24,29 +24,29 @@ const SingleCatCard = ({ cat }) => {
                     </p>
                     <ul className = "list-group list-group-flush">
                         <li className = "list-group-item d-flex justify-content-between mx-3 text-start">
-                            <b>Sex</b>{ cat.sex }
+                            <strong>Sex</strong>{ cat.sex }
                         </li>
                         <li className = "list-group-item d-flex justify-content-between mx-3 text-start">
-                            <b>Age</b> { cat['cat-age'] }
+                            <strong>Age</strong> { cat['cat-age'] }
                         </li>
                         <li className = "list-group-item d-flex justify-content-between mx-3 text-start">
-                            <b>Sterilized</b> { cat['is-steralized'] }
+                            <strong>Sterilized</strong> { cat['is-steralized'] }
                         </li>
                         <li className = "list-group-item d-flex justify-content-between mx-3 text-start">
-                            <b>Gets along with pets</b> { cat['gets-along-with-pets'] }
+                            <strong>Gets along with pets</strong> { cat['gets-along-with-pets'] }
                         </li>
                         <li className = "list-group-item d-flex justify-content-between mx-3 text-start">
-                            <b>Gets along with children</b> { cat['gets-along-with-children'] }
+                            <strong>Gets along with children</strong> { cat['gets-along-with-children'] }
                         </li>
                         {
                             cat['has-special-needs'] === "No"?
                             <li className="list-group-item d-flex justify-content-between mx-3">
-                                <b>Has special needs</b> { cat['has-special-needs'] }
+                                <strong>Has special needs</strong> { cat['has-special-needs'] }
                             </li>
                             :
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item d-flex justify-content-between mx-3">
-                                    <b>Has special needs</b> { cat['has-special-needs'] }
+                                    <strong>Has special needs</strong> { cat['has-special-needs'] }
                                 </li>
                                 { 
                                     cat['special-needs'].map(( affliction, idx ) => 
@@ -62,10 +62,10 @@ const SingleCatCard = ({ cat }) => {
                             </ul>
                         }
                     </ul>
-                </div>
-            </div>
+                </article>
+            </section>
         </div>
-    </div>
+    </article>
   )
 }
 

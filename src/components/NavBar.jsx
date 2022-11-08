@@ -5,7 +5,7 @@ import '../styles/components/navbar.scss'
 const NavBar = () => {
   return (
     <header className = "navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
-        <div className = "container-fluid">
+        <article className = "container-fluid">
             <NavLink className = "navbar-brand" to="/">
                 <img 
                     src = { require('../assets/shelter-logo.png') } 
@@ -27,8 +27,8 @@ const NavBar = () => {
             >
                 <span className = "navbar-toggler-icon"></span>
             </button>
-            <div className = "collapse navbar-collapse justify-content-end" id = "navbarNavAltMarkup">
-                <div className = "navbar-nav position-relative">
+            <section className = "collapse navbar-collapse justify-content-end" id = "navbarNavAltMarkup">
+                <nav className = "navbar-nav position-relative">
                     <NavLink to = {'/'} className = "router-nav-link"> 
                         Home 
                     </NavLink>
@@ -76,9 +76,9 @@ const NavBar = () => {
                     <NavLink to = {'contact'} className = "router-nav-link"> 
                         Contact 
                     </NavLink>
-                </div>
-            </div>
-        </div>
+                </nav>
+            </section>
+        </article>
     </header>
   )
 }

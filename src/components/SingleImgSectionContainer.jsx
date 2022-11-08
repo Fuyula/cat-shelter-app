@@ -11,10 +11,10 @@ const SingleImgSectionContainer = ({ imgUrl, title, content, reverse }) => {
             src = { imgUrl }
           />
       </figure>
-      <div className='col d-flex flex-column align-items-center justify-content-center'>
+      <section className='col d-flex flex-column align-items-center justify-content-center'>
           <h2 className='display-4 my-5'>{ title }</h2>
           <p> { content }</p>
-        </div>
+      </section>
     </section>
   )
 }

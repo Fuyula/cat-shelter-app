@@ -20,8 +20,8 @@ const Carousel = () => {
         },
     ])
   return (
-    <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div className="carousel-indicators">
+    <section id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
+        <section className="carousel-indicators">
             {
                 cats.map( (_, index) => {
                     return(
@@ -37,22 +37,22 @@ const Carousel = () => {
                     )
                 })
             }
-        </div>
-        <div className="carousel-inner">
+        </section>
+        <section className="carousel-inner">
             {
                 cats.map( (cat, index) => {
                     return(
                         <figure className={`carousel-item ${index === 0 &&'active'}`} data-bs-interval="5000" key={ `carousel ${index},2` }>
                             <img src={ cat['image-url'] } className="d-block w-100" alt={ cat['cat-name']}/>
-                            <div className="carousel-caption d-none d-md-block">
+                            <figcaption className="carousel-caption d-none d-md-block">
                                 <h5>{ cat['cat-name'] }</h5>
                                 <p>{ cat['cat-age'] }</p>
-                            </div>
+                            </figcaption>
                         </figure>
                     )
                 })
             }
-        </div>
+        </section>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
@@ -61,7 +61,7 @@ const Carousel = () => {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
         </button>
-    </div>
+    </section>
   )
 }
 

@@ -56,7 +56,7 @@ const MeetOurCats = () => {
     <main className="App meet-our-cats">
       <h1 className='display-1'> Give a cat a home </h1>
       <p> { lorem.repeat(3) } </p>
-      <div className='container-fluid d-flex flex-column'>
+      <article className='container-fluid d-flex flex-column'>
         <section className="filter-nav navbar">
           <div className="filter-nav-container container-fluid d-flex justify-content-between align-items-center px-5">
             <form className="d-flex m-3" role="search">
@@ -86,7 +86,7 @@ const MeetOurCats = () => {
           }
         </section>
         <CatsPagination />
-      </div>
+      </article>
     </main>
   )
 }

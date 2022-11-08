@@ -6,7 +6,7 @@ import '../styles/components/footer.scss';
 const Footer = () => {
   return (
     <footer className = "navbar navbar-dark bg-dark bottom p-5">
-        <div className = "container-fluid d-flex justify-content-around">
+        <address className = "container-fluid d-flex justify-content-around">
             <p className = 'text-light text-center mx-2'>
                 Calle Merced 535, Santiago, Chile
             </p>
@@ -33,7 +33,7 @@ const Footer = () => {
                     />
                 </a>
             </div>
-        </div>
+        </address>
     </footer>
   )
 }
