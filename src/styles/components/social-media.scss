@@ -1,9 +1,8 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 .social-media-icon {
-    color: $white;
     transition: all .8s ease;
     &:hover {
-        color: $cyan-300;
+        color: $cyan-300 !important;
     }
 }
